@@ -33,6 +33,18 @@ var tests = {
             assert.equal('foobar.js', data[0].file);
         }
     },
+    'ParseSync': {
+        topic: function() {
+            return parse.parseSync(yuiFile);
+        },
+        'should parse': function(data) {
+            assert.isArray(data);
+            assert.equal(data.length, 3);
+            assert.equal(data[0].title, 'Test #1');
+            assert.equal(data[1].title, 'Test #2');
+            assert.equal(data[2].title, 'Test #3');
+        }
+    },
     'parse the file': {
         topic: function() {
             parse(yuiFile, this.callback);

@@ -1,7 +1,7 @@
 {
   "name": "client-lcov-parse",
   "description": "Parse lcov results files and return JSON",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Dav Glass <davglass@gmail.com>, ssnau <korige@gmail.com>",
   "contributors": [
     "Alan Gutierrez <alan@prettyrobots.com>",
