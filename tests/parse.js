@@ -1,8 +1,9 @@
 var vows = require('vows'),
     path = require('path'),
+    fs = require('fs'),
     assert = require('assert'),
     parse = require('../lib'),
-    yuiFile = path.join(__dirname, 'info/parts.info');
+    yuiFile = fs.readFileSync(path.join(__dirname, 'info/parts.info'), 'utf-8');
 
 var tests = {
     'Should be loaded': {

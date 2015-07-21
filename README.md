@@ -1,6 +1,8 @@
-## LCOV file parser
+## Client LCOV file parser
 
-Simple LCOV file parser
+Simple LCOV file parser.
+
+This project is fork from 'lcov-parser' and remove the fs dependency.
 
 ## Installation
 
@@ -73,7 +75,3 @@ It will return JSON like this:
 
     npm install && npm test
 
-
-## Build Status
-
-[![Build Status](https://secure.travis-ci.org/davglass/lcov-parse.png?branch=master)](http://travis-ci.org/davglass/lcov-parse)
